@@ -23,6 +23,34 @@ img {
 div.a {
   text-indent: -20px;
 }
+	
+.accordion {
+  background-color: #331a00;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #804000; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #663300;
+  overflow: hidden;
+}
+	
+	
+	
+	
 </style>
 	
 	
@@ -80,7 +108,7 @@ div.a {
 		impairments.
 		</p>
 		<p>
-		2018 - 2019: With <a target="_blank" rel="noopener noreferrer" style="color:white" href="https://cra.com/">Charles River Analytics Inc.</a> (Cambridge, MA), I conducted a literature review and a meta-analysis to understand the
+		2018 – 2019: With <a target="_blank" rel="noopener noreferrer" style="color:white" href="https://cra.com/">Charles River Analytics Inc.</a> (Cambridge, MA), I conducted a literature review and a meta-analysis to understand the
 		effect of simulation fidelity on training transfer (see List of Written Works 7, 8, and 12).
 		</p>
 
@@ -93,17 +121,17 @@ div.a {
 				
 		<span>
 		<p>
-		2021 - 2022: I am an instructor in Penn State College of Information Sciences and Technology (IST) for a course with the title of <i>Training and Technology</i>.
+		2021 – 2022: I am an instructor in Penn State College of Information Sciences and Technology (IST) for a course with the title of <i>Training and Technology</i>.
 		Because the topic has been central to my research, I am fortunate to have the chance to design the entire course and create its content. Videos of some lectures are available<a target="_blank" rel="noopener noreferrer" style="color:white" href="https://www.youtube.com/watch?v=AbmjCgJZbs0&list=PLFHEwlJ3rUj61w_EL3UyiDQ9ybBr1piH-&index=2"> here</a>.
 		 </p>
 		
 		<p>
-		2016 - 2021: I was a teaching assistant in Penn State IST for <i>Foundations of Human-Centered Design</i> and <i>Statistics</i>. Prior to joining Penn State (from 2016 to 2018),
+		2016 – 2021: I was a teaching assistant in Penn State IST for <i>Foundations of Human-Centered Design</i> and <i>Statistics</i>. Prior to joining Penn State (from 2016 to 2018),
 		I was a teaching assistant in Lehigh University’s Psychology Department for courses in <i>Psychology</i> and <i>Cognitive Science</i>. 
 		</p>
 			
 		<p>
-		2015 - 2016: I was a high school instructor, teaching <i>Introduction to Programming with C#</i> to senior high school students.
+		2015 – 2016: I was a high school instructor, teaching <i>Introduction to Programming with C#</i> to senior high school students.
 		</p>
 			
 		 </span>
@@ -141,7 +169,6 @@ div.a {
 	        <h5><b><p style="text-align:center;">Highlights of Research Projects</p></b></h5>
 	      <p>These are some of the research projects that I led during the last few years. You can find the reference numbers to publications at the bottom of this page.</p>
 	      
-	      <br>
 	      <p style="text-align:center;"><i>Simulation Fidelity and Training</i></p>
 	      
 	      		<table width="50%" align="center" border="1" cellpadding="5">
@@ -154,7 +181,7 @@ div.a {
 			</table>
 	      
 	      <p>
-		 2018 - 2022: I tried to understand the effect of the realism of training materials (or <i>simulation fidelity</i>) on the effectiveness of training (or <i>transfer</i>).
+		 2018 – 2022: I tried to understand the effect of the realism of training materials (or <i>simulation fidelity</i>) on the effectiveness of training (or <i>transfer</i>).
 		 I conducted a series of studies, including a literature review and a meta-analysis, to determine the relationship between fidelity and transfer [7, 8, 12]. Although the
 		 focus of this project was on the domain of troubleshooting electro-mechanical systems, other domains such as medical education, aviation, and transportation were also reviewed.
 		 The modality of training devices ranged from simple drawings on a paper to virtual reality systems and sophisticated flight simulators.
@@ -175,7 +202,7 @@ div.a {
 			</table>
 	      
 	      <p>
-		 2019 - 2021: I proposed a method that systematizes the use of experts' performance in designing training simulators.
+		 2019 – 2021: I proposed a method that systematizes the use of experts' performance in designing training simulators.
 		 The method uses the videorecording of experts at work (<i>ethnography</i>) to model their performance, and the model can directly guide the design of training simulators [9].
 		 Similar to the research above, training in domains such as maintenance and troubleshooting, transportation, and using medical devices can benefit from this design method.
 	      </p>
@@ -193,31 +220,34 @@ div.a {
 			</table>
 	      
 	      <p>
-		 2020 - 2022: In this research I investigated the possible use of video on creating online job descriptions [14]. The question is whether embedding a short video of a job
+		 2020 – 2022: In this research I investigated the possible use of video on creating online job descriptions [14]. The question is whether embedding a short video of a job
 		 and a day of life of an employee can influence job-seekers' attitude toward that job and organization, and whether it has any effect on job-seekers' decision to pursue employment in
 		 that job and organization.
 	      </p>
 	      
-	      <br>
-	       <p style="text-align:center;"><i>Some Other Projects</i></p>
+		<div class="w3-container">
+			<button class="accordion"><p style="text-align:center;">Some Other Projects</p></button>
+			<div class="panel">
+
 		<p>
-			Sometimes, I enjoy addressing some fundamental issues in my studies [11, 13]. For example, being convinced of the soundness of my research requires
+			Sometimes, I enjoy addressing fundamental issues in my studies [11, 13]. For example, being convinced of the soundness of my research requires
 			knowing about the history and foundational issues of psychology and its methods. In this respect, me and my colleague wrote a
 			philosophically-oriented article that discusses the reason of our aversion to cognitivism and our defense of behaviorism [11].
 		</p>
 		<p>
-			As part of my education in computer engineering, I conducted a project to understand
-			human learning of functional relations (continuous-valued causal relations). This research was in the intersection of psychology and machine learning [5].
-			This was an example of basic science, but over time my interest has shifted more toward applied topics.
+			As part of my education in computer engineering (machine learning and AI), I conducted a project to understand
+			human learning of functional relations (continuous-valued causal relations) [5]. The ultimate goal was to implement human learning in machines and understanding how human learning works.
+			This was an example of basic science, but over time my interest has shifted toward applied topics.
 		</p>
 		<p>
-			I have also written articles on other topics of interest to academia in general [6]. Finally, I am sharing some unpublished
+			I have also written articles on other topics of interest to academia in general, such as some aspects of technical and academic writing [6]. Finally, I am sharing some unpublished
 			manuscripts that I wrote some years ago. They are not professional works in any sense; I was inexperienced when writing them. Nonetheless, they can
 			show the evolution of my interests [1 – 4].
 		</p>
 
 	      
-	      
+		</div>
+	      </div>
 	      
 	      
 	      
